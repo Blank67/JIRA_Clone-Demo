@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import './Login.css';
 import Link from 'next/link';
+import { Button } from '@mui/material';
 
 const LoginPage = () => {
   const [username, setUsername] = useState('');
@@ -40,18 +41,24 @@ const LoginPage = () => {
               onChange={(e) => setPassword(e.target.value)}
             />
           </div>
+          <div className='signup'>
+            <Link href="signUp"> <h6>Sign Up</h6>  </Link>
+            
+          </div>
           {error && <div className='error-message'>{error}</div>}
           
           {!error ? (
-  <Link href="/home">
-    <button className="w-100 py-2" onClick={handleLogin}>
+    <Button  variant="outlined"  className="w-100 py-2" onClick={handleLogin}>
       Login
-    </button>
-  </Link>
+    </Button>
 ) : (
-  <button className="w-100 py-2" onClick={handleLogin}>
+  <Link href="/home">
+
+  <Button className="w-100 py-2" variant="outlined" >
     Login
-  </button>
+  </Button>
+  </Link>
+
 )}
 
         </div>

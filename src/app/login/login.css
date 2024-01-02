@@ -1,11 +1,14 @@
 /* General styling */
 .home-image {
-    background-color: blue !important;
-    height: 100vh;
+    /* background-color: blue !important; */
+    background-image: url("../../../public/assesst/viraBG.png");
+    /* height: 100vh; */
   }
   
   .login-container {
-    background-color: aliceblue !important; 
+    /* background-color: aliceblue !important;  */
+    background-image: url("../../../public/assesst/viraBG.png");
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -28,12 +31,17 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 20px
+    margin-bottom: 20px;
+    font-weight: 600 !important;
+    color: aqua !important;
+    
  
   }
   .heading h1 {
     text-align: center;
     margin-bottom: 10px;
+    /* font-weight: bold; */
+    /* font-size: 120px; */
   }
   
   /* Form styling */
@@ -66,4 +74,10 @@
     border: none;
     border-radius: 4px;
     cursor: pointer;
+  }
+  .signup{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    color: #4caf50;
   }
