@@ -7,7 +7,7 @@ const NotFound = () => {
     const navigate = useRouter();
     const navigateRef = useRef(navigate);
     useEffect(() => {
-        navigateRef.current.push("/home");
+        navigateRef.current.push("/login");
     }, []);
     return (
         <div className="d-flex justify-content-center align-items-center vh-100">
