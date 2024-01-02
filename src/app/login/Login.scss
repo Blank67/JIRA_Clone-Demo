@@ -1,22 +1,18 @@
 /* General styling */
 .home-image {
-    /* background-color: blue !important; */
     background-image: url("../../../public/assesst/viraBG.png");
-    /* height: 100vh; */
-  }
-  
-  .login-container {
-    /* background-color: aliceblue !important;  */
-    background-image: url("../../../public/assesst/viraBG.png");
+}
 
+.login-container {
+    background-image: url("../../../public/assesst/viraBG.png");
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
-  }
-  
-  .login-box {
-    background-color: aliceblue !important;
+}
+
+.login-box {
+    background-color: aliceblue;
     /* Updated to white */
     width: 700px;
     padding: 120px;
@@ -24,60 +20,60 @@
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     align-items: center;
-  }
-  
-  .heading {
+}
+
+.heading {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin-bottom: 20px;
-    font-weight: 600 !important;
-    color: aqua !important;
-    
- 
-  }
-  .heading h1 {
+    font-weight: 600;
+    color: aqua;
+}
+.heading h1 {
     text-align: center;
     margin-bottom: 10px;
-    /* font-weight: bold; */
-    /* font-size: 120px; */
-  }
-  
-  /* Form styling */
-  .form-group {
+}
+
+/* Form styling */
+.form-group {
     margin-bottom: 15px;
-  }
-  
-  label {
+}
+
+label {
     display: block;
     margin-bottom: 5px;
-  }
-  
-  input {
+}
+
+input {
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-  }
-  
-  .error-message {
+}
+
+.error-message {
     color: red;
-    margin-bottom: 10px;
-  }
-  
-  button {
+}
+
+button {
     background-color: #4caf50;
     color: white;
     padding: 10px 15px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-  }
-  .signup{
+}
+.signup {
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
     align-items: end;
     color: #4caf50;
-  }
+}
+
+.eye-btn1 {
+    top: 36px;
+    right: 9px;
+}
