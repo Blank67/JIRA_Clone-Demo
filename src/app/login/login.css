@@ -1,9 +1,11 @@
-.home-image{
-background-color: blue;
-height: 100vh;
-}
-.login-container {
-    background-color: antiquewhite;
+/* General styling */
+.home-image {
+    background-color: blue !important;
+    height: 100vh;
+  }
+  
+  .login-container {
+    background-color: aliceblue !important; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,20 +13,30 @@ height: 100vh;
   }
   
   .login-box {
-    background-color: antiquewhite;
-
-    width: 300px;
-    padding: 20px;
+    background-color: aliceblue !important;
+    /* Updated to white */
+    width: 700px;
+    padding: 120px;
     border: 1px solid #ccc;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     align-items: center;
   }
-  .heading{
+  
+  .heading {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px
+ 
   }
+  .heading h1 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  /* Form styling */
   .form-group {
     margin-bottom: 15px;
   }
@@ -55,4 +67,3 @@ height: 100vh;
     border-radius: 4px;
     cursor: pointer;
   }
-  
