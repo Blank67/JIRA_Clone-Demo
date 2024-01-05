@@ -1,0 +1,10 @@
+/* Sticky header styles */
+.sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    &.bottom-shadow {
+        background-color: #f5f5f5;
+        box-shadow: 0px 15px 10px -15px #111;
+    }
+}

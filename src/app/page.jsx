@@ -5,9 +5,11 @@ import * as Yup from "yup";
 import "./page.scss";
 import Link from "next/link";
 import { Button, TextField, CircularProgress } from "@mui/material";
+import { useRouter } from "next/navigation";
 
 const LoginPage = () => {
     const [loading, setLoading] = useState(false);
+    const navigate = useRouter();
 
     const formik = useFormik({
         initialValues: {
@@ -26,8 +28,9 @@ const LoginPage = () => {
             setLoading(true);
             setTimeout(async () => {
                 setLoading(false);
-
-                window.location.href = "/home";
+                //DONOT USE LOCATION.HREF ALSO RELOADING DUE TO SETTIMEOUT
+                // window.location.href = "/home";
+                navigate.push("/dashboard");
             }, 2000);
         },
     });
